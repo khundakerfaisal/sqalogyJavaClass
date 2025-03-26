@@ -9,5 +9,6 @@ public class First_class {
         String friend=neighbour;
         System.out.println(name);
 
+
     }
 }
