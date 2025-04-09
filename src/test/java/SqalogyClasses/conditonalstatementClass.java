@@ -30,6 +30,8 @@ public class conditonalstatementClass {
             //
             //            default:
             //                System.out.println("wed-sat");
+
+
         }
 //        Switch conditional statement End
     }
