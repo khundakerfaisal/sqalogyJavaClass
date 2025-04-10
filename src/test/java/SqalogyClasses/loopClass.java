@@ -64,5 +64,28 @@ public class loopClass {
             //        System.out.println("The End");
 //-----------Example2: End example 2
 //End do-while loop
+//Reverse Number
+        System.out.println("Reverse Entry Using for loop\n");
+                for (int i=10;i>0;i--){
+                    System.out.println(i);
+                }
+                int j=10;
+
+        System.out.println("Reverse Entry Using while loop\n");
+                while (j>4 && j<=10)
+                {
+                    System.out.println(j);
+                    j--;
+                }
+
+        System.out.println("Reverse Entry Using do-while loop\n");
+        int k=10;
+            do {
+                System.out.println(k);
+                k--;
+
+            }while (k>5);
+
+
     }
 }
