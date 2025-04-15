@@ -3,6 +3,8 @@ package SqalogyClasses;
 import java.util.Random;
 import java.util.Scanner;
 
+
+
 public class loopClass {
     public static void main(String[] args) {
  //Start For Loop
@@ -87,19 +89,23 @@ public class loopClass {
 //
 //            }while (k>5);
 
+//=====================Start the auto number ==================================
+            //            String customer="customer-15";
+            //            int nextNumber=Integer.parseInt(customer.split("-")[1]);
+            //            int number= 5;
+            //            for (int i=1;i<number;i++){
+            //                int autoNumber=nextNumber+i;
+            //                String newCustomer= "customer-"+autoNumber;
+            //                System.out.println(newCustomer);
+            //
+            //            }
+//=================End the auto number ====================
 
-            String customer="customer-15";
-            int nextNumber=Integer.parseInt(customer.split("-")[1]);
-            int number= 5;
-            for (int i=1;i<number;i++){
-                int autoNumber=nextNumber+i;
-                String newCustomer= "customer-"+autoNumber;
-                System.out.println(newCustomer);
-
-            }
-
-
-
+String name="fdjaskdjfdkfsdklfksdkfsdaf";
+        System.out.println(name.charAt(4));//Find the character of index 4
+        System.out.println(name.length());//find the full name length
+        System.out.println(name.substring(0,6));//find the name begin to end index
+        System.out.println(name.substring(21));//find the name with begin index
 
     }
 }
