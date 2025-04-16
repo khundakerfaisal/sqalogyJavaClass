@@ -99,13 +99,41 @@ public class loopClass {
             //                System.out.println(newCustomer);
             //
             //            }
-//=================End the auto number ====================
+//=================End the auto number =================================
+//================String non-premtive data==============================
+            //String name="fdjaskdjfdkfsdklfksdkfsdaf";
+            //        System.out.println(name.charAt(4));//Find the character of index 4
+            //        System.out.println(name.length());//find the full name length
+            //        System.out.println(name.substring(0,6));//find the name begin to end index
+            //        System.out.println(name.substring(21));//find the name with begin index
+// ================End non-premative data===============
+// ================Start do-while example for input number================
+        //        Scanner sc= new Scanner(System.in);
+        //        int number=0;
+        //        do {
+        //            System.out.println("input a number");
+        //            number=sc.nextInt();
+        //            System.out.println("here is the number");
+        //            System.out.println(number);
+        //        }while(number >=5 && number<=100);
+        //        System.out.println("The end");
+// ================End do-while example for input number===================
 
-String name="fdjaskdjfdkfsdklfksdkfsdaf";
-        System.out.println(name.charAt(4));//Find the character of index 4
-        System.out.println(name.length());//find the full name length
-        System.out.println(name.substring(0,6));//find the name begin to end index
-        System.out.println(name.substring(21));//find the name with begin index
+// ================Start while loop example for using break and continue================
+        //        int i=0;
+        //        while (true){
+        //            if (i==3){
+        //                i=i+1;
+        //                continue;
+        //            }
+        //            System.out.println(i);
+        //            i=i+1;
+        //            if(i>5){
+        //                break;
+        //            }
+        //        }
+// ================End while loop example for using break and continue================
+
 
     }
 }
