@@ -1,5 +1,8 @@
 package itTraining;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class itTrainingClass {
     //Static block ->static,Non static->object
     static {
@@ -77,9 +80,16 @@ public class itTrainingClass {
 
                 //                itTrainingClass itc=new itTrainingClass();
                 //                itc.sum(10,20);
+        Scanner input=new Scanner(System.in);
+        System.out.println("Please enter your name");
+        ArrayList<String> names=new ArrayList<>();
+        for (int i=0;i<=4;i++){
+            names.add(i,input.nextLine());
 
+        }
+        System.out.println(names);
+//        System.out.println(names.get(3));
 
     }
-
 
 }
