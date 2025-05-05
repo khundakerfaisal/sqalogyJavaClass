@@ -30,18 +30,71 @@ public class firstClass {
 //        for (int score : scores) {
 //            System.out.println(score);
 //        }
-        try{
-            Scanner sc=new Scanner(System.in);
-            System.out.println("Please input number");
-            int number =sc.nextInt();
-            System.out.println(number);
+//        try{
+//            Scanner sc=new Scanner(System.in);
+//            System.out.println("Please input number");
+//            int number =sc.nextInt();
+//            System.out.println(number);
+//
+//
+//        }catch (Exception e) {
+//            System.out.println("You are input double Number");
+//        }finally {
+//            System.out.println("Please input actual integer number ");
+//        }
 
 
-        }catch (Exception e) {
-            System.out.println("You are input double Number");
-        }finally {
-            System.out.println("Please input actual integer number ");
+//                widening casting
+
+        int num=40;
+        double number1=num;
+        System.out.println(number1);
+
+//                Narrowing casting
+
+        float price=300.50f;
+        int mainPrice=(int)price; //casting
+        System.out.println(mainPrice);
+//        Arethmatic Operator
+        int a=6;
+        int b=3;
+        System.out.println(a+b);
+        System.out.println(a-b);
+        System.out.println(a*b);
+        System.out.println(a/b);
+        System.out.println(a%b);
+
+//        assignment operator
+
+        int c=10;
+        System.out.println("inatial value is"+c);
+        System.out.println(c+=5);
+        System.out.println(c);
+        System.out.println(c-=3);
+
+//        comparison operator
+        System.out.println("The value condition is :" +(a<b));
+        System.out.println("The value condition is:" +(a>b));
+//        logical operator
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Please input age ..:");
+        int value =sc.nextInt();
+        boolean age = value<=16;
+        if (age){
+
+
+            System.out.println("You are input the wrong age");
+
         }
+        else {
+            System.out.println("You are input the correct age");
+        }
+//Bit wise Operator
+        int a = 5; // Binary: 0101
+        int b = 3; // Binary: 0011
+        System.out.println(a & b);
+
+
     }
 
 }
