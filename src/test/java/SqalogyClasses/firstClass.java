@@ -90,9 +90,9 @@ public class firstClass {
             System.out.println("You are input the correct age");
         }
 //Bit wise Operator
-        int a = 5; // Binary: 0101
-        int b = 3; // Binary: 0011
-        System.out.println(a & b);
+        int e = 5; // Binary: 0101
+        int f = 3; // Binary: 0011
+        System.out.println(e & f);
 
 
     }
