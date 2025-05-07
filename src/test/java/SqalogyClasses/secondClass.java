@@ -3,7 +3,7 @@ package SqalogyClasses;
 public class secondClass {
     public static void main(String[] args) {
         double number1=60;
-        double number2=800.54;
+        double number2=9.50;
         System.out.println("Maximum number is " +Math.max(number1,number2));
         System.out.println("Minimum number is " +Math.min(number1,number2));
         System.out.println(Math.sqrt(number2));
