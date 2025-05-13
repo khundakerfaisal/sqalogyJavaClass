@@ -1,5 +1,6 @@
 package SqalogyClasses;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class operatorClass {
@@ -114,5 +115,10 @@ public class operatorClass {
 
 
 //-------------------------------Logical operator Start------------------------//
+        Random random=new Random();
+        int autoNumber=random.nextInt(90000)+10000;
+        String prefix="4q5s";
+        String generateRef= (prefix+autoNumber);
+        System.out.println(generateRef);
     }
 }
