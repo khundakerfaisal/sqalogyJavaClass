@@ -17,11 +17,11 @@ class TV implements InterfaceClass {
 }
 class FAN implements InterfaceClass {
     public void turnOn() {
-        System.out.println("TV is ON");
+        System.out.println("FAN is ON");
     }
 
     public void turnOff() {
-        System.out.println("TV is OFF");
+        System.out.println("FAN is OFF");
     }
 }
 class Main{
