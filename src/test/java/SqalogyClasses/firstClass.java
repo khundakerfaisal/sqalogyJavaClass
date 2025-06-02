@@ -7,6 +7,8 @@ public class firstClass {
 //    String fName; //instance Variable
 //    int age;
     public static void main(String[] args) {
+
+
 //        firstClass fc=new firstClass();
 //        String name="Arman";//local variable
 //        System.out.println(name);
