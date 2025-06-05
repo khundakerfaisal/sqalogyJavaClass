@@ -1,5 +1,7 @@
 package SqalogyClasses;
 
+import java.util.Arrays;
+
 public class reverseStringClass {
     public static void main(String[] args) {
         //Using String builder function
@@ -15,18 +17,24 @@ public class reverseStringClass {
 //            reverse +=reverseCheck[i];
 //        }
 //        System.out.println("The name is " +reverse);
+            //Reverse int number
+            //            for (int i = 10; i >= 0; i--) {
+            //
+            //                System.out.println(i);
+            //            }
 
-        String areaName="Feni";
-        StringBuilder sb=new StringBuilder(areaName);
-        String reverName=sb.reverse().toString();
-        System.out.println(reverName);
-        char [] checkArea=areaName.toCharArray();
-        String reverseName="";
-        for (int i=checkArea.length-1;i>=0;i--){
-            reverseName+=checkArea[i];
+        int [] arrayNumber={10,18,12,15,25,30};
+        StringBuilder sb=new StringBuilder();
+        for (int i = arrayNumber.length - 1; i >= 0; i--) {
+            sb.append(arrayNumber[i]);
 
+            if (i != 0) {
+                sb.append(",");
+            }
+        }
+        String printValue =sb.toString();
+        System.out.println(printValue);
 
         }
-        System.out.println(reverseName);
     }
-}
+
