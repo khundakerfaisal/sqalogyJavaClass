@@ -26,5 +26,6 @@ public class classCheckPractise {
 
 //        System.out.println(name.substring(0,6));
 
+
     }
 }
