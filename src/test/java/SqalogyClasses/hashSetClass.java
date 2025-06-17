@@ -21,5 +21,20 @@ public class hashSetClass {
         System.out.println("Print only the index value :" +listSort.get(0));                //Print the index array
         System.out.println("Print  Array value :" +Arrays.toString(listArray));     //Print all  array data
         System.out.println("Print only the index value for array :" +listArray[2]);                   //Print the index array
+
+        HashSet<Integer> set1=new HashSet<>();
+        set1.add(20);
+        set1.add(30);
+        set1.add(30);
+        set1.add(40);
+        set1.add(10);
+        set1.add(25);
+        System.out.println(set1);
+        ArrayList<Integer> list=new ArrayList<>(set1); //Hashset converted into arraylist
+        list.remove(1);                         //Remove one data from arraylist
+        Collections.sort(list);                        //Sort array list
+        System.out.println(list);                       //Print array list
+        System.out.println(list.get(2));                //print index array data
+
     }
 }
