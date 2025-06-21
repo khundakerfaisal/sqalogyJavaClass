@@ -8,15 +8,19 @@ public class practiseClass3 {
         Scanner sc=new Scanner(System.in);
         String generateNumber= String.valueOf(Math.round(Math.random()*100));
         System.out.println(generateNumber);
-        System.out.println("Input Number :");
-        String InputNumber=sc.nextLine();
 
+        String inputNumber = "";
 
-        if (InputNumber.equals(generateNumber)){
-            System.out.println("Yahoo!! You are input correct Number");
-        }else {
-            System.out.println("Your are input wrong number");
+        while (!inputNumber.equals(generateNumber)){
+            System.out.println("Input Number :");
+            String InputNumber=sc.nextLine();
+            if (InputNumber.equals(generateNumber)){
+                System.out.println("Yahoo!! You are input correct Number");
+            }else {
+                System.out.println("Your are input wrong number");
+            }
         }
+
 
     }
 
