@@ -16,25 +16,24 @@ public class jsonReadWritePrintAll {
         int autoGenerateCount = 4;
         int lastGenerateNumber = 0;
         JSONParser parser = new JSONParser();
-        JSONArray lastUserArray = (JSONArray) parser.parse(new FileReader(fileName));
+        JSONArray lastUserArray = (JSONArray) parser.parse(new FileReader(fileName));//Read the file
         String generateUsername = "";
 
-        if (!lastUserArray.isEmpty()) {
-            JSONObject lastUserObject = (JSONObject) lastUserArray.get(lastUserArray.size() - 1);
-            String lastUserName = (String) lastUserObject.get("lastUserName");
-            lastGenerateNumber = Integer.parseInt(lastUserName.replace(prefixName, ""));
+        if (!lastUserArray.isEmpty()) { //Check the user name is empty or not
+            JSONObject lastUserObject = (JSONObject) lastUserArray.get(lastUserArray.size() - 1); //Checking last added array object
+            String lastUserName = (String) lastUserObject.get("lastUserName");//Checking last username
+            lastGenerateNumber = Integer.parseInt(lastUserName.replace(prefixName, "")); //Replace last generate number
         }
-    else {
-        System.out.println("Create New user");
-    }
+        else {
+            System.out.println("Create New user");
+        }
 
         for (int i = 1; i <= autoGenerateCount; i++) {
-            generateUsername = prefixName + (lastGenerateNumber + i);//Generate username with prefix
+            generateUsername = prefixName + (lastGenerateNumber + i);//Generate username
             System.out.println(generateUsername);
-            // Create a JSON object for each user
+            //Addded all object in the array
             JSONObject userObj = new JSONObject();//Create json object
             userObj.put("lastUserName", generateUsername);//add json object
-            // Add to the array
             lastUserArray.add(userObj);//put the json object in array
 
         }
