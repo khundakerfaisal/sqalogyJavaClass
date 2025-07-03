@@ -1,20 +1,59 @@
 package OOPClass;
 
 public class practiseClassOOP1 {
-        public practiseClassOOP1(){
-        System.out.println("Total Price Is showing successfully");
+
+
+
+    private String empName;
+    private int grossSalary;
+    private int hour;
+    private int perDayAmount;
+    private int month;
+
+
+    public String getEmpName(){
+        return empName;
     }
-    public int practiseClassOOP1(int qty, int price){
-        int totalPrice=qty*price;
-        return totalPrice;
+    public void setEmpName(String empName){
+        this.empName=empName;
+    }
+
+    public int getGrossSalary(){
+        return grossSalary;
+    }
+    public void setGrossSalary(int hour,int perDayAmount,int month){
+        this.hour=hour;
+        this.perDayAmount=perDayAmount;
+        this.grossSalary=((hour*perDayAmount)*month);
+    }
+
+
+    public static void main(String[] args) {
+        practiseClassOOP1 poop1=new practiseClassOOP1();
+        poop1.setEmpName("Arman");
+        poop1.setGrossSalary(8,1500,26);
+        System.out.println("Emp name is : "+poop1.getEmpName());
+        System.out.println("Emp salary is : "+poop1.getGrossSalary());
 
     }
-    public static void main(String[] args) {
-        practiseClassOOP1 pop1=new practiseClassOOP1();
-        int grandTotal=pop1.practiseClassOOP1(10,500);
-        System.out.println(grandTotal);
-    }
+
+
 }
+
+    //        public practiseClassOOP1(){
+//        System.out.println("Total Price Is showing successfully");
+//    }
+//    public int practiseClassOOP1(int qty, int price){
+//        int totalPrice=qty*price;
+//        return totalPrice;
+//
+//    }
+//    public static void main(String[] args) {
+//        practiseClassOOP1 pop1=new practiseClassOOP1();
+//        int grandTotal=pop1.practiseClassOOP1(10,500);
+//        System.out.println(grandTotal);
+//    }
+//}
 //    public static void main(String[] args) {
 //        Animal dog = new Animal();
 //        dog.makeSound();
