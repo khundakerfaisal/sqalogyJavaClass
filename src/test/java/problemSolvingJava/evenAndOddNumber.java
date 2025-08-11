@@ -42,10 +42,18 @@ public class evenAndOddNumber {
 
     }
 
+    public void reverseName(){
+        String name="Mamun";
+        StringBuilder sb=new StringBuilder(name);
+        String reverseName=sb.reverse().toString();
+        System.out.println(reverseName);
+    }
+
     public static void main(String[] args) {
         evenAndOddNumber evenAndOddNumber = new evenAndOddNumber();
 //        evenAndOddNumber.printSingleEvenOrOdd();
 //        evenAndOddNumber.printEvenAndOdd();
-        evenAndOddNumber.printNumberFromInputClass();
+//        evenAndOddNumber.printNumberFromInputClass();
+        evenAndOddNumber.reverseName();
     }
 }
