@@ -1,4 +1,4 @@
-public class variableNtechFound {
+public class variableNtechOverride {
     public static void main(String[] args) {
         Vehicle vehicle = new Vehicle();
         vehicle.brand = "Toyota";
