@@ -13,11 +13,16 @@ public class variableNtechClass {
         System.out.println("Brand: " + car2.brand);
         System.out.println("Modal: " + car2.modal);
 
-        System.out.println(car1.modal + "has" + car1.wheel + "wheel");
-        System.out.println(car2.modal + "has" + car2.wheel + "wheel");
+        System.out.println(car1.modal + " has " + car1.wheel + " wheel ");
+        System.out.println(car2.modal + " has " + car2.wheel + " wheel ");
 
-        purchase(car1.brand,car2.modal)
+        purchase(car1.brand, car2.modal);
 
+    }
+
+    public static void purchase(String brand, String modal) {
+        String name = "mahin";
+        System.out.println(name + " wants to buy a " + brand + " " + modal + " car ");
     }
 
 }
