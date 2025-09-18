@@ -18,5 +18,8 @@ public class LogicalOperator {
         }
 
         sc.close();
+
+
     }
+
 }
