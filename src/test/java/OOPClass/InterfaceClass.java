@@ -6,7 +6,7 @@ public interface InterfaceClass {
 
 }
 
-class TV implements InterfaceClass {
+class TV {
     public void turnOn() {
         System.out.println("TV is ON");
     }
@@ -15,7 +15,7 @@ class TV implements InterfaceClass {
         System.out.println("TV is OFF");
     }
 }
-class FAN implements InterfaceClass {
+class FAN {
     public void turnOn() {
         System.out.println("FAN is ON");
     }

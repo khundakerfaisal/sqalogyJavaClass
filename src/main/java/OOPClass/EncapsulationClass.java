@@ -28,25 +28,35 @@ public class EncapsulationClass {
     public   String color;
 
     public static void main(String[] args) {
-        EncapsulationClass encapsulationClass=new EncapsulationClass();
-        encapsulationClass.setWheel(4);
-        System.out.println(encapsulationClass.getWheel());
+
+        Bike bike=new Bike();
+        bike.showDetails();
+
+        Car car=new Car();
+        car.showDetails();
+
 
 
     }
 }
-class Car{
+class Car extends EncapsulationClass{
     public void showDetails(){
-       Bike bike=new Bike();
-        System.out.println(bike.showDetails());
+        EncapsulationClass encapsulationClass=new EncapsulationClass();
+        encapsulationClass.color="Yellow";
+        encapsulationClass.setBrand("Toyota");
+        encapsulationClass.setWheel(4);
+        System.out.println(encapsulationClass.getBrand());
+
 
     }
 }
-class Bike{
+class Bike extends EncapsulationClass{
     public void showDetails(){
         EncapsulationClass encapsulationClass=new EncapsulationClass();
         encapsulationClass.color="Red";
         encapsulationClass.setBrand("Pulsar");
+        encapsulationClass.setWheel(2);
+        System.out.println(encapsulationClass.getBrand());
 
     }
 }
