@@ -1,8 +1,6 @@
 package Class2;
 
-import java.util.Random;
-
-public class ArithmaticMath {
+public class MathFunction {
     public static void main(String[] args) {
         double a=9.00;
         double b=7.00;
