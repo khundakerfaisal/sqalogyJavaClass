@@ -13,6 +13,4 @@ public class UserInput {
         System.out.println(firstName+" "+lastName);
 
     }
-
-
 }
