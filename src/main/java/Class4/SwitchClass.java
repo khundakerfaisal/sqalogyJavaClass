@@ -4,27 +4,35 @@ import java.util.Scanner;
 
 public class SwitchClass {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Input The Marks : ");
-        int marks;
-        while (true){
-            marks= sc.nextInt();
-            switch (marks){
-                case 1:
-                    if(marks>=80 && marks<90){
-                        System.out.println("Grade is A+");
-                    }
-                    break;
-                case 2:
-                    if(marks>70 && marks<80){
-                        System.out.println("Grade is A");
-                    }
-                    break;
-                default:
-                    System.out.println("You are failed " +marks +" Grade F");
-                 break;
-            }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input The Day : ");
+        int day = sc.nextInt();
+        switch (day) {
+            case 1:
+                System.out.println("Today is saturday");
+                break;
+            case 2:
+                System.out.println("Today is Monday");
+                break;
+            case 3:
+                System.out.println("Today is Tuesday");
+                break;
+            case 4:
+                System.out.println("Today is Wednesday");
+                break;
+            case 5:
+                System.out.println("Today is Thursday");
+                break;
+            case 6:
+                System.out.println("Today is Friday");
+                break;
+            case 7:
+                System.out.println("Today is Saturday");
+                break;
+            default:
+                System.out.println("Invalid day number! Please enter 1-7.");
         }
-
     }
+
 }
+
