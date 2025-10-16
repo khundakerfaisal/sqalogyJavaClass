@@ -1,9 +1,10 @@
 package Class1;
 
 public class LocalVariable {
-    String name = "Omar sani";
+    String Name="Malik";
+//    String name = "Omar sani";
     public void display() {
-        System.out.println(name);
+        System.out.println(Name);
     }
     public static void main(String[] args) {
         LocalVariable localVariable = new LocalVariable();
