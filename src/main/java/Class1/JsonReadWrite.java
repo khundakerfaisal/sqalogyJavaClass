@@ -14,24 +14,20 @@ public class JsonReadWrite {
     public static void main(String[] args) throws IOException, ParseException {
         String fileName="src/test/resources/createUser.json";
         String prefixName="UserName-";
-        int countNumber=0;
-        int generateNumber=2;
+        int lastCountNumber=0;
+        int generateNumber=1;
         String generateUserName="";
         JSONParser parser=new JSONParser();
         JSONArray lastNameArray= (JSONArray) parser.parse(new FileReader(fileName));
         if (!lastNameArray.isEmpty()){
-            JSONObject lastNameObject= (JSONObject) lastNameArray.get(lastNameArray.size()-1);
-            String lastUserName=lastNameObject.get("lastUserName").toString();
-            countNumber= Integer.parseInt(lastUserName.replace(prefixName,""));
+            JSONObject lastAddedObj= (JSONObject) lastNameArray.get(lastNameArray.size()-1);
+            String lastUserName=lastAddedObj.get("lastUserName").toString();
+            lastCountNumber= Integer.parseInt(lastUserName.replace(prefixName,""));
 
         }
-        else {
-            System.out.println("User Created  successfully");
-        }
-
-        for (int i=1;i<=generateNumber;i++){
-          generateUserName=prefixName+(countNumber+i) ;
-//            System.out.println(generateNumber);
+        for (int i=0;i<=generateNumber;i++){
+            generateUserName=prefixName+(lastCountNumber+i);
+            System.out.println(generateUserName);
             JSONObject lastObject=new JSONObject();
             lastObject.put("lastUserName",generateUserName);
             lastNameArray.add(lastObject);
