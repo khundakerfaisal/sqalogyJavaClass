@@ -29,13 +29,14 @@ public class JsonReadWrite {
             System.out.println("User Created  successfully");
         }
 
-        for (int i=0;i<=generateNumber;i++){
+        for (int i=1;i<=generateNumber;i++){
           generateUserName=prefixName+(countNumber+i) ;
+//            System.out.println(generateNumber);
+            JSONObject lastObject=new JSONObject();
+            lastObject.put("lastUserName",generateUserName);
+            lastNameArray.add(lastObject);
         }
-        JSONObject lastObject=new JSONObject();
 
-        lastObject.put("lastUserName",generateUserName);
-        lastNameArray.add(lastObject);
         FileWriter writer=new FileWriter(fileName);
         writer.write(lastNameArray.toJSONString());
         writer.flush();
