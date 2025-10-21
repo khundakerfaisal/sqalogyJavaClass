@@ -26,11 +26,11 @@ class FAN {
 }
 class Main{
     public static void main(String[] args) {
-        InterfaceClass tv = new TV();
-        InterfaceClass fan = new FAN();
-
-        tv.turnOn();    // TV is ON
-        fan.turnOn();   // Fan is ON
+//        InterfaceClass tv = new TV();
+////        InterfaceClass fan = new FAN();
+//
+//        tv.turnOn();    // TV is ON
+//        fan.turnOn();   // Fan is ON
     }
 }
 
