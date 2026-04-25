@@ -1,1 +1,20 @@
-[{"name":"Faisal-1"},{"name":"Faisal-3"},{"name":"Faisal-4"},{"name":"Faisal-5"},{"name":"Faisal-6"},{"name":"Faisal-7"}]
+[
+  {
+    "UserName": "customer-1"
+  },
+  {
+    "UserName": "customer-2"
+  },
+  {
+    "UserName": "customer-3"
+  },
+  {
+    "UserName": "customer-4"
+  },
+  {
+    "UserName": "customer-5"
+  },
+  {
+    "UserName": "customer-6"
+  }
+]
